@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Projet kepler</title>
+</head>
+<body>
+    <div id="text-container">
+        <h1>Projet Kepler</h1>
+        <h2>Collet William - Sling Jonathan</h2>
+        <div id="File">
+            <button onclick="ImportFile()">Select file</button>
+            <p></p>
+        </div>
+        <ul id="Planetes"></ul>
+    </div>
+    <main>
+        <ul id="menu">
+            <li>        
+                <p>Echelle : </p>
+                <input id="scale" type="range" min="1" max="11" value="11">
+            </li>
+            <li>
+                <p>Vitesse :</p>
+                <input id="speed" type="range" min="1" max="50" value="1">
+            </li>
+            <ul id="align">
+                <p>Alignement planetes :</p>
+            </ul>
+        </ul>
+
+    </main>
+    
+    <script src="./assets/js/p5.min.js"></script>
+    <script src="./assets/js/traitement.js"></script>
+    <script src="./assets/js/affichage.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
